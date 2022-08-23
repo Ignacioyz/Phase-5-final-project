@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@stripe/react-stripe-js": "^1.10.0",
-    "@stripe/stripe-js": "^1.35.0"
-  }
-}
