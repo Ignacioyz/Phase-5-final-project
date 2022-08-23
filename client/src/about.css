@@ -1,0 +1,42 @@
+#about-video {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-Blurb {
+    position: absolute;
+    top: 95px;
+    left:100px;
+    right: 100px;
+    background-color: rgba(158, 158, 158, 0.361);
+    color: rgb(252, 252, 252);
+    border-radius: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1px;
+    height: 85%;
+    width: 86%;
+    backdrop-filter: blur(8px);
+}
+
+.about-Blurb p{
+    padding: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    font-size: large;
+    
+  
+}
+
+.about-Blurb h2 {
+   text-align: center; 
+   height: 3px;
+  
+}
+
+.about-Blurb h3 {
+    
+    text-align: center;
+    height: 12px;
+    
+}

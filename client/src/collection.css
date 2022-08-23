@@ -1,0 +1,65 @@
+.collection{
+    width: 1100px;
+    height:100%;
+ 
+    margin: auto;
+    
+    text-align: center;
+    margin-top: 80px;
+    
+    
+}
+
+.paintings{
+    width: 80%;
+    /* height: 33vh; */
+    cursor: pointer;
+    margin: 0;
+    
+}
+
+.painting-upload{
+    width: 75%;
+    height: 32vh;
+    cursor: pointer;
+}
+
+#paintings-card{
+    width: 33%;
+    float: left;
+    margin: 0;
+}
+
+.upload-details-input{
+    width: 150px;
+    height: 25px;
+    background-color: rgb(225, 242, 243);
+
+    margin: 10px;
+    border: none;
+   
+    
+}
+
+.upload-detials-price {
+    width: 150px;
+    height: 25px;
+    background-color: rgb(225, 242, 243);
+
+    margin: 1%;
+    border: none;
+}
+
+.admin-div{
+    width: 80%;
+    height: 45%;
+    margin: 5%;
+ 
+    
+}
+
+.file-input{
+    border-radius: none;
+}
+
+
