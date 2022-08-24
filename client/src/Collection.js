@@ -62,7 +62,7 @@ function Collection({ setPaintings, paintings, handleBuy, user }) {
                 // is returned because filter returns an array
                 setPaintings(paintings.filter((item) => item.id !== data.id))
             })
-        // console.log(item.id)
+        console.log(item.image_url)
     }
 
 
@@ -88,7 +88,7 @@ function Collection({ setPaintings, paintings, handleBuy, user }) {
 
                     <img className="paintings" onClick={() => { handlePaintingInModal(item) }}
                         src={item.image_url} alt={item.title}></img> <Cart />
-
+                       
                     <h2>"{item.title}"</h2>
 
                 </div>

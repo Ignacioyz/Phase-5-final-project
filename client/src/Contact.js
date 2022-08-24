@@ -9,6 +9,7 @@ function Contact() {
     const formRef = useRef();
 
     const sendEmail = (e) => {
+        setSentMessage(false)
         setIsLoading(true)
         e.preventDefault();
         //change to loading
@@ -48,10 +49,10 @@ function Contact() {
                         <div className="form-div">
                             <div className="secret-div"></div>
                             <form ref={formRef} className="contact-form" onSubmit={sendEmail}>
-                                <input name={'name'} required id="contact-name" className="contact-input" placeholder="Name"></input>
+                                <input type="text" name={'name'} required id="contact-name" className="contact-input" placeholder="Name"></input>
                                 <input name="email" required className="contact-input" type="email" placeholder="Email"></input>
-                                <input name="subject" required className="contact-input-subject" placeholder="Subject"></input>
-                                <input name="comment" required className="contact-input-comment" placeholder="Comment"></input>
+                                <input type="text" name="subject" required className="contact-input-subject" placeholder="Subject"></input>
+                                <textarea type="text" name="comment" required className="contact-input-comment" placeholder="Comment"></textarea>
                                 <button className="send-button">Send</button>
                             </form>
                         </div>

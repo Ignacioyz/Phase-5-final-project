@@ -15,7 +15,7 @@ function Cart() {
     fetch("http://localhost:3000/carts")
       .then(r => r.json())
       .then(data => {
-        console.log(data)
+        // console.log(data)
       })
   }, [])
 
