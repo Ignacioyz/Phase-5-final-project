@@ -27,8 +27,7 @@ function Collection({ setPaintings, paintings, handleBuy, user }) {
         uploadForm.append("name", fileName);
         uploadForm.append("title", newTitle);
         uploadForm.append("description", newDescription);
-        uploadForm.append("price", parseInt(newPrice));
-
+        uploadForm.append("price", parseFloat(newPrice));
         fetch('/paintings', {
             method: "POST",
             headers: {
@@ -51,8 +50,8 @@ function Collection({ setPaintings, paintings, handleBuy, user }) {
                 "Content-Type": "application/json"
             }
         })
-        //  destroy method (paintings controller) returns painting that was deleted
-        // what we want to do is remove the one that was deleted from the array
+            //  destroy method (paintings controller) returns painting that was deleted
+            // what we want to do is remove the one that was deleted from the array
             .then(resp => resp.json())
             .then(data => {
                 // closes modal when delete is triggered 
@@ -88,7 +87,7 @@ function Collection({ setPaintings, paintings, handleBuy, user }) {
 
                     <img className="paintings" onClick={() => { handlePaintingInModal(item) }}
                         src={item.image_url} alt={item.title}></img> <Cart />
-                       
+
                     <h2>"{item.title}"</h2>
 
                 </div>
@@ -107,7 +106,7 @@ function Collection({ setPaintings, paintings, handleBuy, user }) {
                             <button className="upload-painting-btn">Upload Painting</button>
                             <input className="upload-details-input" placeholder="Title" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} ></input>
                             <input className="upload-details-input" placeholder="Description" value={newDescription} onChange={(e) => setNewDescription(e.target.value)} ></input>
-                            <input className="upload-detials-price" type="number" placeholder="Price" value={newPrice} onChange={(e) => setNewPrice(e.target.value)}></input>
+                            <input className="upload-detials-price" step="0.01" type="number" placeholder="Price" value={newPrice} onChange={(e) => setNewPrice(e.target.value)}></input>
                         </form>
                     </div>
                     : console.log('not admin')}

@@ -4,11 +4,18 @@
     z-index: -1;
 }
 
+.about-parent{
+    width: 100%;
+    height:100%;
+    
+}
+  
+
 .about-Blurb {
     position: absolute;
-    top: 95px;
-    left:100px;
-    right: 100px;
+    top: 10%;
+    left: 7%;
+    right: 20%;
     background-color: rgba(158, 158, 158, 0.361);
     color: rgb(252, 252, 252);
     border-radius: 15px;

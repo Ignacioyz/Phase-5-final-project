@@ -6,6 +6,7 @@ import { CircularProgress } from '@material-ui/core'
 
 
 function Contact() {
+    
     const formRef = useRef();
 
     const sendEmail = (e) => {
@@ -44,7 +45,7 @@ function Contact() {
                     <CircularProgress /> :
                     <>
                         <div className="additional">
-                            <h3 className="contact-statement"> Contact Pepe for additional Art, Requests, or Consignments</h3>
+                            <h3 className="contact-statement"> Contact Pepe for Sales, Additional Art, Requests, or Consignments</h3>
                         </div>
                         <div className="form-div">
                             <div className="secret-div"></div>

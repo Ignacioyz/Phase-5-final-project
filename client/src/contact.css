@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Rubik+Maze&family=Square+Peg&display=swap');
+
+
 
 .nav {
   display: flex;
@@ -38,6 +41,7 @@
 .contact-statement {
     padding: 0;
     margin: 0;
+     font-family: 'Noto Sans JP', sans-serif;
 }
 
 .contact-form {
@@ -46,7 +50,7 @@
     height: 50%;
     text-align: center;
     align-items: center;
-    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
 
 }
 
@@ -67,6 +71,7 @@
     outline: none;
     border: none;
     float: left;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .contact-input-subject {
@@ -80,6 +85,7 @@
     margin-bottom: 30px;
     outline: none;
     border: none;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .contact-input-comment {
@@ -91,6 +97,7 @@
     outline: none;
     border: none;
 
+    font-family: 'Noto Sans JP', sans-serif;
     padding: 0;
     display: flex;
 }
