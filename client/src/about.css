@@ -47,3 +47,30 @@
     height: 12px;
     
 }
+
+
+@media (max-width:650px) { 
+    
+   .about-parent {
+     overflow: hidden;
+   width: 1300px;
+    }
+   
+    #about-video{
+        
+        width: 200%;
+    }
+    
+    
+    .about-Blurb{
+        top:35%;
+        height: 800px;
+    }
+}
+
+@media (min-width:2000px){
+    .about-Blurb p {
+        line-height: 150%;
+    }
+
+}

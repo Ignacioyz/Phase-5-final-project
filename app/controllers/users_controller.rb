@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     if @user.save
       # creates cart and gives it the user_id
       # user_id is attribute from cart, and user.id is the id of this user we're creating
-      cart = Cart.create(user_id: user.id)
+      cart = Cart.create(user_id: @user.id)
       render json: @user, status: :created
     else
       render json: @user.errors, status: :unprocessable_entity

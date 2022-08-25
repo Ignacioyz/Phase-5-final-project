@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 
 
@@ -11,15 +11,15 @@ function Cart() {
     fetch("http://localhost:3000/carts")
       .then(r => r.json())
       .then(data => {
-        
+
       })
   }, [])
 
 
 
-  
 
-  return(
+
+  return (
     <></>
   )
 

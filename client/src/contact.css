@@ -3,7 +3,7 @@
 
 
 .nav {
-  display: flex;
+    display: flex;
 }
 
 .contact-body {
@@ -41,7 +41,7 @@
 .contact-statement {
     padding: 0;
     margin: 0;
-     font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .contact-form {
@@ -112,6 +112,31 @@
     color: white;
     cursor: pointer;
     margin-top: 5%;
-    
 
+
+}
+
+
+@media (max-width:650px) {
+    .form-div {
+        width: 450px;
+        height: 500px;
+    }
+
+    .additional {
+        width: 500px;
+    }
+
+    .contact-input {
+        height: 40px;
+    }
+
+    .contact-input-subject {
+        height: 40px;
+    }
+
+
+    .contact-input-comment{
+        height: 200px;
+    }
 }

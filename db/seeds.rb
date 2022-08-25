@@ -29,7 +29,7 @@ Painting.destroy_all
  painting.image.attach(io: File.open('./public/bull.jpg'), filename: 'bull.jpg')
  
  painting = Painting.create!(title: 'Cactus-2', description: 'Acrylic on Canvas, (24"x30")', price: 450.00);
- painting.image.attach(io: File.open('./public/cactus.jpg'), filename: 'cactus-2.jpg')
+ painting.image.attach(io: File.open('./public/cactus2.jpg'), filename: 'cactus-2.jpg')
  
  painting = Painting.create!(title: 'Cactus-Dance', description: 'Acrylic on Paper, (18"x24")', price: 400.00);
  painting.image.attach(io: File.open('./public/cactus-dance.jpg'), filename: 'cactus-dance.jpg')

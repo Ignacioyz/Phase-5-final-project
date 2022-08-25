@@ -44,8 +44,6 @@
 
     margin: 10px;
     border: none;
-
-
 }
 
 .upload-detials-price {
@@ -67,4 +65,30 @@
 
 .file-input {
     border-radius: none;
+}
+
+
+
+
+@media (max-width:650px) { 
+
+
+
+
+    .collection{
+   margin: 10px;
+   padding: 10px;
+}
+
+#paintings-card{
+    margin: 35px;
+}
+
+
+.paintings {
+    width: 120%;
+    padding: 10px; 
+}
+
+
 }

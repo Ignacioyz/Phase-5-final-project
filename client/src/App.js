@@ -16,7 +16,7 @@ function App() {
 
   // state for fetching all paintings 
   const [paintings, setPaintings] = useState([])
- 
+
   // sets user state to persist for session 
   const [user, setUser] = useState("")
 
@@ -33,7 +33,7 @@ function App() {
   }, [])
   // console.log(paintings)
 
-  
+
 
 
   // user session persist site wide (no reload)
@@ -54,24 +54,21 @@ function App() {
 
 
   return (
-    <div>
+      <div>
+        <Navbar user={user} setUser={setUser} />
 
-      {/* <BrowserRouter> */}
-      <Navbar user={user} setUser={setUser} />
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/collection' element={<Collection setPaintings={setPaintings} paintings={paintings} user={user} />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/login' element={<Login setUser={setUser} />} />
-        <Route path='/signup' element={<SignUp />} />
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/collection' element={<Collection setPaintings={setPaintings} paintings={paintings} user={user} />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/login' element={<Login setUser={setUser} />} />
+          <Route path='/signup' element={<SignUp />} />
+        </Routes>
 
-      </Routes>
-      {/* </BrowserRouter> */}
 
-    </div>
-
+      </div>
   );
 }
 
