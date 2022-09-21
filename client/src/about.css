@@ -68,7 +68,7 @@
     }
 }
 
-@media (min-width:2000px){
+@media (mini-width:2000px){
     .about-Blurb p {
         line-height: 150%;
     }
